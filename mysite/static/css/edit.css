@@ -1,0 +1,324 @@
+*{
+  padding:0;
+  margin: 0;
+}
+
+@media screen and (min-width: 959px){
+  body {
+    font-family: Quicksands, sans-serif;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px #f0f0f0
+  }
+  .view {
+    position: absolute;
+    left: 0;
+    top: 5vh;
+    height: 95vh;
+    width: 70%;
+    border-right: 1px solid #f0f0f0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .edit {
+    position: absolute;
+    left: 70%;
+    width: 30%;
+
+    top: 5vh;
+    height: 95vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .edit .add_bar {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 2vh;
+    text-align: center;
+
+  }
+  .edit .add_bar a {
+    position: relative;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: .5rem;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px #f0f0f0;
+    cursor: pointer;
+  }
+  .edit .widget_setting {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .widget_list {
+    position: absolute;
+    width: 60vw;
+    left: 10vw;
+    height: 70vh;
+    top: 15vh;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 4px #f0f0f0;
+    z-index: 1000;
+    border-radius: 5px;
+  }
+  .widget_list .list_close {
+    position: absolute;
+    right: 0;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .widget_list a:hover {
+    border-color: skyblue;
+  }
+  .view_set {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    z-index: 100;
+    border: 1px solid #f0f0f0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #fff;
+  }
+  .widget_set {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    overflow-y:scroll;
+    overflow-x: hidden;
+  }
+  .view_id {
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+  }
+  .view_id p {
+    position: relative;
+    left: 5%;
+  }
+  .view_id input {
+    position: relative;
+    font-size: 25px;
+    left: 10%;
+    border: none;
+    background-color: #f0f0f0;
+  }
+  .view_name {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    font-size: 25px;
+  }
+  .view_name p {
+    position: relative;
+    left: 5%;
+  }
+  .view_name input {
+    position: relative;
+    font-size: 25px;
+    left: 10%;
+    width: 60%;
+    border: none;
+    background-color: #f0f0f0;
+  }
+  .view_color {
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    top: 30%;
+  }
+  .view_color p {
+    position: relative;
+    left: 5%;
+  }
+  .view_color input {
+    position: relative;
+    font-size: 25px;
+    left: 10%;
+    border: none;
+    background-color: #f0f0f0;
+  }
+  .widget_size {
+    position: relative;
+    width: 100%;
+    font-size: 25px;
+    top: 30%;
+  }
+  .widget_size p {
+    position: relative;
+    left: 5%;
+  }
+  .widget_size input {
+    position: relative;
+    font-size: 25px;
+    border: none;
+    background-color: #f0f0f0;
+    width: 50%;
+    left: 10%;
+  }
+  .widget_position {
+    position: relative;
+    width: 100%;
+    font-size: 25px;
+    top: 40%;
+  }
+  .widget_position p {
+    position: relative;
+    left: 5%;
+  }
+  .widget_position input {
+    position: relative;
+    font-size: 25px;
+    border: none;
+    background-color: #f0f0f0;
+    width: 50%;
+    left: 10%;
+  }
+  .widget_color {
+    position: relative;
+    top: 50%;
+    font-size: 25px;
+  }
+  .widget_color p {
+    position: relative;
+    left: 5%;
+  }
+  .widget_color input {
+    position: relative;
+    font-size: 25px;
+    left: 10%;
+  }
+  .widget_border {
+    position: relative;
+    font-size: 25px;
+    top: 60%;
+  }
+  .widget_border p {
+    position: relative;
+    left: 5%;
+  }
+  .widget_border input {
+    position: relative;
+    font-size: 25px;
+    border: none;
+    background-color: #f0f0f0;
+    width: 25%;
+    left: 10%;
+    }
+
+  .widget_box {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .widget_box table {
+    position: absolute; width: 80%;
+    left: 10%;
+    top: 10%;
+    border-collapse: collapse;
+  }
+  .widget_box table td {
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    }
+
+
+  .widget_button {
+    position: relative;
+    border: solid 1px #007bff;
+    color: #007bff;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .widget_text {
+    position: relative;
+    border: solid 1px #f0f0f0;
+    padding: 5px;
+    background-color: #fff;
+    background-color: #f0f0f0;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .widget_bar {
+    position: relative;
+    border: solid 1px #f0f0f0;
+    border-radius: 5rem;
+    padding: 5px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .widget_frame {
+    position: relative;
+    border: solid 1px #f0f0f0;
+    border-radius: 0;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .widget_scroll {
+    position: relative;
+    border: solid 1px #f0f0f0;
+    border-radius: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .base_button {
+    position: absolute;
+    border: solid 1px #007bff;
+    color: #007bff;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 25px;
+    cursor: grab;
+    z-index: 10;
+  }
+
+
+  .dev_view {
+    position: relative;
+    width:400px;
+    height: 860px;
+    box-shadow: 0 1px 10px 1px #808080;
+    left: 40%;
+    top: 10%;
+    border-radius: px;
+    margin-bottom: 20%;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 959px){
+
+}
+@media screen and (max-width: 480px){
+
+}

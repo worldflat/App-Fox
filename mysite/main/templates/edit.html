@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppFox</title>
+    <link rel="stylesheet" href="{% static '/css/edit.css'%}">
+    <script type="text/javascript" src="{% static 'js/sha256.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/hashed_code.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script type="text/javascript" src="{% static '/js/platform.js'%}"></script>
+    <script type="text/javascript" src="{% static '/js/edit.js'%}"></script>
+
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="content">
+      <div class="edit">
+        <div class="add_bar">
+          <a id="add_widget">+Add widget</a>
+          <a id="add_view">+Add view</a>
+        </div>
+        <div class="widget_setting">
+          <div class="view_set" id="view_set">
+            <div class="view_id">
+            <p>ID<input type="text" class="id_input" id="view_id"></p>
+          </div>
+          <div class="view_name">
+            <p>Name<input type="text" class="name_input" id="view_name"></p>
+          </div>
+          <div class="view_color">
+            <p>Background<input type="color" name="" value="" id="view_color"></p>
+          </div>
+          </div>
+
+          <div class="widget_set" id="widget_set">
+            <div class="view_id">
+            <p>ID<input type="text" class="id_input" id="element_id"></p>
+          </div>
+          <div class="view_name">
+            <p>Text<input type="text" class="name_input" id="element_text"></p>
+          </div>
+          <div class="widget_size">
+            <p>Width<input type="number" class="widget_width" id="widget_width" value="100"></p>
+            <p>Height<input type="number" class="widget_height" id="widget_height" value="100"></p>
+          </div>
+          <div class="widget_position">
+            <p>X<input type="number" class="widget_left" id="widget_left" value=""></p>
+            <p>Y<input type="number" class="widget_top" id="widget_top" value=""></p>
+          </div>
+          <div class="widget_color">
+            <p>Color<input type="color" name="" id="text_color" value=""></p>
+            <p>Background<input type="color" name="" id="background_color" value=""></p>
+          </div>
+          <div class="widget_border">
+            <p>Border weight<input type="number" id="border_weight" value=""></p>
+            <p>Border radius<input type="number" id="border_radius" name="" value=""></p>
+            <p>Border color<input type="color" id="border_color" name="" value=""></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="widget_list" id="widget_list">
+        <a id="list_close" class="list_close">×</a>
+        <div class="widget_box">
+          <table>
+            <tr>
+              <td><a class="widget_button" data-type="a" id="add_button">Button</a></td>
+              <td><a class="widget_text">Text|</a></td>
+              <td><a class="widget_bar">Action Bar</a></td>
+              <td><a class="widget_frame">Frame</a></td>
+            </tr>
+            <tr>
+              <td><a class="widget_scroll">ScrollFrame</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="view" id="view">
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
